@@ -1,7 +1,9 @@
-﻿using Blog.Kernel.Domain.DomainObjects;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using Blog.Kernel.Domain.DomainObjects;
 
 namespace Blog.Domain.Entities;
 
+[Table("[User]")]
 public class User : Entity
 {
     public string Name { get; set; }
@@ -10,5 +12,6 @@ public class User : Entity
     public string Bio { get; set; }
     public string Image { get; set; }
     public string Slug { get; set; }
-    
+
+    public List<Role> Roles { get; set; }
 }
