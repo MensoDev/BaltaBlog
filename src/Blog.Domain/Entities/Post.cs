@@ -1,9 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using Blog.Kernel.Domain.DomainObjects;
+﻿using Blog.Kernel.Domain.DomainObjects;
+using Dapper.Contrib.Extensions;
 
 namespace Blog.Domain.Entities;
 
-[Table("[Post]")]
+[System.ComponentModel.DataAnnotations.Schema.Table("[Post]")]
 public class Post : Entity
 {
     public int Id { get; set; }
@@ -15,10 +15,15 @@ public class Post : Entity
     public DateTime LastUpdateDate { get; set; }
 
     public int AuthorId { get; set; }
+    
+    [Write(false)]
     public User Author { get; set; }
 
     public int CategoryId { get; set; }
+    
+    [Write(false)]
     public Category Category { get; set; }
 
+    [Write(false)]
     public List<Tag> Tags { get; set; }
 }

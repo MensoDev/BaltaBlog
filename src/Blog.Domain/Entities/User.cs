@@ -1,9 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using Blog.Kernel.Domain.DomainObjects;
+﻿using Blog.Kernel.Domain.DomainObjects;
+using Dapper.Contrib.Extensions;
 
 namespace Blog.Domain.Entities;
 
-[Table("[User]")]
+[System.ComponentModel.DataAnnotations.Schema.Table("[User]")]
 public class User : Entity
 {
     public string Name { get; set; }
@@ -13,5 +13,6 @@ public class User : Entity
     public string Image { get; set; }
     public string Slug { get; set; }
 
+    [Write(false)]
     public List<Role> Roles { get; set; }
 }
