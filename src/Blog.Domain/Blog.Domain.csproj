@@ -9,7 +9,12 @@
     <ItemGroup>
       <ProjectReference Include="..\Blog.Kernel.Domain\Blog.Kernel.Domain.csproj" />
     </ItemGroup>
-
+    
+    <ItemGroup>
+        <Using Include="Dapper.Contrib.Extensions" />
+        <Using Include="Blog.Kernel.Domain.DomainObjects" />
+    </ItemGroup>
+    
     <ItemGroup>
       <PackageReference Include="Dapper.Contrib" Version="2.0.78" />
     </ItemGroup>
