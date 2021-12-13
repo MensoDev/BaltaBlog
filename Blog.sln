@@ -14,7 +14,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.DataAccess", "src\Blog
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6BDE7702-92AD-40B6-8D35-7F2DDBB791AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Laboratoy", "tests\Blog.Laboratoy\Blog.Laboratoy.csproj", "{13EFCA13-EB2A-4485-A682-43A8C71524D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Laboratory", "tests\Blog.Laboratory\Blog.Laboratory.csproj", "{13EFCA13-EB2A-4485-A682-43A8C71524D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
