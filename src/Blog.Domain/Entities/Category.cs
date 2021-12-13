@@ -1,7 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using Blog.Kernel.Domain.DomainObjects;
-
-namespace Blog.Domain.Entities;
+﻿namespace Blog.Domain.Entities;
 
 [Table("[Category]")]
 public class Category : Entity
