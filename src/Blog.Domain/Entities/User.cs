@@ -1,4 +1,6 @@
-﻿namespace Blog.Domain.Entities;
+﻿using Blog.Kernel.Domain.Objects;
+
+namespace Blog.Domain.Entities;
 
 [Table("[User]")]
 public class User : Entity

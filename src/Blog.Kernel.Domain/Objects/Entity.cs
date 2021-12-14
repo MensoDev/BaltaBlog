@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Blog.Kernel.Domain.DomainObjects;
+namespace Blog.Kernel.Domain.Objects;
 
 public abstract class Entity
 {
