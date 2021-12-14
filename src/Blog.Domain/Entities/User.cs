@@ -1,9 +1,8 @@
-﻿using Blog.Kernel.Domain.DomainObjects;
-using Dapper.Contrib.Extensions;
+﻿using Blog.Kernel.Domain.Objects;
 
 namespace Blog.Domain.Entities;
 
-[System.ComponentModel.DataAnnotations.Schema.Table("[User]")]
+[Table("[User]")]
 public class User : Entity
 {
     public string Name { get; set; }

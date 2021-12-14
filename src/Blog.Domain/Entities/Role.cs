@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using Blog.Kernel.Domain.DomainObjects;
+﻿using Blog.Kernel.Domain.Objects;
 
 namespace Blog.Domain.Entities;
 
