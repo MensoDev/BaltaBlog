@@ -12,7 +12,7 @@
     
     <ItemGroup>
         <Using Include="Dapper.Contrib.Extensions" />
-        <Using Include="Blog.Kernel.Domain.DomainObjects" />
+        <Using Include="Blog.Kernel.Domain.Objects" />
     </ItemGroup>
     
     <ItemGroup>
