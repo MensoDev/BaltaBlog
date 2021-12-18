@@ -1,5 +1,6 @@
 ﻿using Blog.Laboratory.Forms;
 using Blog.Laboratory.Screens;
+using Blog.Laboratory.Screens.RoleScreens;
 using Blog.Laboratory.Screens.TagScreens;
 using Blog.Laboratory.Screens.UserScreens;
 
@@ -39,7 +40,7 @@ public static class ScreenFrameFactory
     {
         var options = new List<ScreenMenuOption>
         {
-            new ("Create Role", () => InputText.Read("Test")),
+            new ("Create Role", new CreateRoleScreenAction()),
             new ("Delete Role", () => InputText.Read("Test")),
             new ("Update Role", () => InputText.Read("Test")),
             new ("List Roles", () => InputText.Read("Test")),
