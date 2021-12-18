@@ -40,6 +40,7 @@ public class ListTagScreenAction : IScreenActionStrategy
         }
 
         Console.WriteLine("\nPress Key for continue....");
+        
         Console.ReadKey();
         return true;
     }

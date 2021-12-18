@@ -38,8 +38,6 @@ public class DeleteTagScreenAction : IScreenActionStrategy
         Alert.Information("Success", $"Tag {tag.Name} Deleted");
         Alert.PressKeyToContinueMessage();
         return true;
-        
-        
     }
     
     

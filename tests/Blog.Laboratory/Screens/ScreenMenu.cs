@@ -20,6 +20,7 @@ public class ScreenMenu
     
     public async Task LoadScreen()
     {
+        _isRunning = true;
         ModifyTitleOnScreen();
         SetDefaultThemeSettings();
         
