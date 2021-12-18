@@ -26,7 +26,7 @@ public static class ScreenFrameFactory
         {
             new ("Create Tag", new CreateTagScreenAction()),
             new ("Delete Tag", new DeleteTagScreenAction()),
-            new ("Update Tag", () => InputText.Read("Test")),
+            new ("Update Tag", new UpdateTagScreenAction()),
             new ("List Tags", new ListTagScreenAction()),
             new ("Back Main Menu")
         };
