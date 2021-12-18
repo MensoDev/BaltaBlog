@@ -1,6 +1,7 @@
 ﻿using Blog.Laboratory.Forms;
 using Blog.Laboratory.Screens;
 using Blog.Laboratory.Screens.TagScreens;
+using Blog.Laboratory.Screens.UserScreens;
 
 namespace Blog.Laboratory;
 
@@ -66,7 +67,7 @@ public static class ScreenFrameFactory
     {
         var options = new List<ScreenMenuOption>
         {
-            new ("Create User", () => InputText.Read("Test")),
+            new ("Create User", new CreateUserScreenAction()),
             new ("Delete User", () => InputText.Read("Test")),
             new ("Update User", () => InputText.Read("Test")),
             new ("List Users", () => InputText.Read("Test")),

@@ -19,8 +19,4 @@
       <ProjectReference Include="..\..\src\Blog.Infrastructure.IoC\Blog.Infrastructure.IoC.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Screens\UserScreens" />
-    </ItemGroup>
-
 </Project>
