@@ -17,7 +17,7 @@ public abstract class RepositoryBase<TEntity> : IRepository<TEntity> where TEnti
     public virtual async Task<IEnumerable<TEntity>> GetAllAsync()
         => await _connection.GetAllAsync<TEntity>();
 
-    public virtual async Task<TEntity> GetByIdAsync(int id)
+    public virtual async Task<TEntity?> GetByIdAsync(int id)
         => await _connection.GetAsync<TEntity>(id);
 
     public virtual async Task<bool> RegisterAsync(TEntity entity)
