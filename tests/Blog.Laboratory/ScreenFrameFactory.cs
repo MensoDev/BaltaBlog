@@ -71,16 +71,11 @@ public static class ScreenFrameFactory
             new ("Create User", new CreateUserScreenAction()),
             new ("Delete User", () => InputText.Read("Test")),
             new ("Update User", () => InputText.Read("Test")),
-            new ("List Users", () => InputText.Read("Test")),
+            new ("List Users", new ListUsersScreenAction()),
             new ("List Users With Roles", () => InputText.Read("Test")),
             new ("Back Main Menu")
         };
 
         return new ScreenMenu("Blog Users Menu", options, 0);
     }
-    
-    
-
-    
-    
 }
