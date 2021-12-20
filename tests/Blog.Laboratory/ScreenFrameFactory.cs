@@ -72,7 +72,7 @@ public static class ScreenFrameFactory
             new ("Delete User", () => InputText.Read("Test")),
             new ("Update User", () => InputText.Read("Test")),
             new ("List Users", new ListUsersScreenAction()),
-            new ("List Users With Roles", () => InputText.Read("Test")),
+            new ("List Users With Roles", new ListUsersWithRolesScreenAction()),
             new ("Back Main Menu")
         };
 
