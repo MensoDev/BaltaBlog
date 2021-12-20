@@ -43,7 +43,7 @@ public static class ScreenFrameFactory
             new ("Create Role", new CreateRoleScreenAction()),
             new ("Delete Role", () => InputText.Read("Test")),
             new ("Update Role", () => InputText.Read("Test")),
-            new ("List Roles", () => InputText.Read("Test")),
+            new ("List Roles", new ListRolesScreenAction()),
             new ("Add User in Role", () => InputText.Read("Test")),
             new ("Back Main Menu")
         };
