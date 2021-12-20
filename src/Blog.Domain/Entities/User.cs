@@ -5,6 +5,12 @@ namespace Blog.Domain.Entities;
 [Table("[User]")]
 public class User : Entity
 {
+
+    public User()
+    {
+        Roles = new List<Role>();
+    }
+    
     public string Name { get; set; }
     public string Email { get; set; }
     public string PasswordHash { get; set; }
